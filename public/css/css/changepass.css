@@ -1,0 +1,236 @@
+/* fonts */
+@font-face {
+	font-family: Anton;
+	src: url(../../../fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url(../../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../../../fonts/Roboto-Regular.ttf);
+}
+
+body {
+	background-color: #ededed;
+	margin: 0;
+	font-family: Poppins;
+	color: #2d3a5e;
+}
+
+/* Sidebar */
+
+.header {
+	display: flex;
+	justify-content: center;
+}
+
+img {
+	margin-top: 15px;
+}
+
+.logotext {
+	margin-top: 20px;
+	padding-left: 10px;
+	color: white;
+	font-size: 25px;
+	font-family: Anton;
+}
+
+.sidebar-wrapper {
+	float: left;
+	background-color: #2d3a5e;
+	width: 20%;
+	height: 100vh;
+}
+
+.burger-menu {
+	display: none;
+	float: right;
+	width: 2em;
+	cursor: pointer;
+}
+
+.close-btn {
+	display: none;
+}
+
+.logo-mobile {
+	display: none;
+}
+
+.head-logo {
+	width: 30px;
+}
+
+.sidebar-buttons {
+	padding-left: 5px;
+	padding-top: 50px;
+}
+
+.sidebar-wrapper svg {
+	padding-right: 15px;
+}
+
+.sidebar-list {
+	width: 100%;
+	padding: 0%;
+}
+
+.sidebar-buttons {
+	margin-top: 2em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.sidebar-buttons li {
+	padding: 25px;
+}
+
+.list:hover {
+	background-color: #ececec57;
+}
+
+.logout {
+	width: 20%;
+	background-color: #3c817e;
+}
+
+.logout-text {
+	position: absolute;
+	bottom: 20px;
+	padding-left: 25px;
+	color: red;
+}
+
+/* a tag */
+a {
+	font-family: Poppins;
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+}
+
+/* Container  */
+
+.changepass-container {
+	/* background-color: rgba(0, 0, 255, 0.513); */
+	width: 80%;
+	height: 100vh;
+	float: right;
+	/* background-color: aqua; */
+	/* padding: 20px; */
+}
+.navigation {
+	width: 85%;
+	padding: 0px 50px;
+}
+
+.head-navi {
+	font-size: 32px;
+	color: #2d3a5e;
+}
+
+.navi-color {
+	color: #3c817e;
+}
+
+h1 {
+	color: #2d3a5e;
+}
+
+.text-info {
+	font-family: Poppins;
+	font-size: 12px;
+	color: rgb(255, 87, 87);
+}
+
+.change-container {
+	/* margin: 10px 50px; */
+	width: 85%;
+	height: 85vh;
+	margin: auto;
+	padding: 0px 50px;
+	border-radius: 20px;
+	background-color: #ffffff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.changepass-fields {
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	place-content: center;
+	padding: 50px 50px;
+	/* background-color: #3c817e; */
+}
+
+label {
+	font-size: 20px;
+	color: #2d3a5e;
+}
+
+input {
+	font-family: Poppins;
+	height: 30px;
+	border-radius: 8px;
+	border: 2px #87898d solid;
+	padding: 0 8px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.change-buttons {
+	margin: 40px 0px;
+	text-align: right;
+	/* background-color: #2d3a5e; */
+}
+
+button {
+	font-family: Poppins;
+	padding: 7px 50px;
+}
+
+.cancel-btn {
+	border-radius: 5px;
+	color: white;
+	background-color: #fd4949;
+	border: none;
+	cursor: pointer;
+}
+
+.cancel-btn:hover {
+	background-color: #ff6565;
+}
+
+.save-btn {
+	border-radius: 5px;
+	color: white;
+	background-color: #3c817e;
+	border: none;
+	cursor: pointer;
+}
+
+.save-btn:hover {
+	background-color: #1fb89c;
+}
+
+/* Badge */
+
+.count {
+	background-color: red;
+	border-radius: 30%;
+	padding: 2px 7px;
+	font-style: normal;
+	font-size: 12px;
+	position: relative;
+	top: -20px;
+	left: -150px;
+}
