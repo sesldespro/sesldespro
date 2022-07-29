@@ -1,0 +1,273 @@
+/* fonts */
+@font-face {
+	font-family: Anton;
+	src: url(../../../fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url(../../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../../../fonts/Roboto-Regular.ttf);
+}
+
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: poppins;
+	background: rgb(238, 240, 245);
+	color: #2d3a5e;
+	/* background: linear-gradient(138deg, rgba(238,240,245,1) 1%, rgba(212,216,225,1) 100%); */
+	outline: none;
+}
+html::-webkit-scrollbar {
+	display: none;
+}
+*:focus {
+	outline: none;
+}
+
+/*=================================================== Side Menu ===========================================================*/
+
+.sidemenu {
+	float: left;
+	position: fixed;
+	background-color: #fff;
+	width: 6%;
+	height: 100vh;
+	display: block;
+	z-index: 5;
+}
+.sidemenu .MenuServices {
+	margin: 150px 0px;
+	/* background-color: aqua; */
+}
+
+.sidemenu a {
+	color: #2d3a5e;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	padding: 20px 10px;
+	margin: 10px;
+	/* background-color: brown; */
+	border-radius: 10px;
+}
+.sidemenu a .tooltip {
+	position: absolute;
+	transform: translateY(-27%);
+	transition: 0s;
+	left: 10%;
+	text-align: center;
+	justify-content: center;
+	text-decoration: none;
+	padding: 7px 25px;
+	background-color: #2db6b0;
+	color: #fff;
+	border-radius: 50px;
+	opacity: 0;
+	pointer-events: none;
+	box-shadow: rgba(150, 150, 168, 0.2) 0px 7px 29px 0px;
+}
+.sidemenu a:hover .tooltip {
+	transition: all 0.4s ease;
+	left: 110%;
+	opacity: 1;
+}
+
+.sidemenu .logotext {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	padding: 20px 10px;
+	margin: 10px;
+	background-color: none;
+	border-radius: 10px;
+	top: 100px;
+	position: static;
+	overflow: hidden;
+}
+img {
+	width: 30px;
+}
+.logout {
+	position: relative;
+	bottom: -20px;
+}
+.log {
+	align-items: center;
+	justify-content: center;
+}
+.MenuServices a:hover,
+.log a:hover {
+	background-color: #ececec;
+}
+
+/*========================================== Activity Content ====================================================*/
+
+.SubscriptionContent {
+	width: 94%;
+	height: 100%;
+	float: right;
+	/* background-color: antiquewhite; */
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Navigation */
+
+.Navigation {
+	/* background-color:#456244; */
+	padding: 35px 50px;
+	align-items: center;
+	border-bottom: #fff solid 3px;
+}
+
+h2 {
+	padding: 0px;
+	margin: 0px;
+	font-family: anton;
+}
+
+/*================================================ Activity Container =======================================================*/
+
+.ActivityContent {
+	/* background-color: #2DB6B0; */
+	height: 88.8vh;
+	display: flex;
+}
+.ActivityTable {
+	background-color: #f7f8fa;
+	width: 97%;
+	height: 80vh;
+	margin: auto;
+	border-radius: 10px;
+	display: block;
+	overflow-y: auto;
+	box-shadow: rgba(136, 136, 158, 0.2) 0px 7px 29px 0px;
+}
+
+.table {
+	border-collapse: collapse;
+	margin: auto;
+	width: 97%;
+	/* table-layout: fixed; */
+}
+
+.ActivityTable {
+	overflow: auto;
+	height: 79vh;
+}
+
+.ActivityTable thead th {
+	position: sticky;
+	top: 0px;
+	/* background-color: #fff; */
+	color: #a4a4a4;
+}
+
+thead {
+	width: 100%;
+	border-bottom: #e4e4e4 solid 1px;
+}
+
+tr,
+th,
+td {
+	padding: 0px 5px;
+}
+th {
+	color: #a4a4a4;
+	background-color: #f7f8fa;
+	padding: 40px 0px;
+}
+td {
+	align-items: center;
+	text-align: center;
+	padding: 30px 0px;
+}
+tr:hover {
+	background-color: #eeeeee;
+}
+tbody {
+	width: 100%;
+	overflow: auto;
+	/* background-color: #2DB6B0; */
+}
+.ActivityTable::-webkit-scrollbar {
+	display: none;
+}
+
+.Status {
+	font-weight: bold;
+}
+
+/* ======================================== Pop Up Images ======================================== */
+
+.Image {
+	cursor: pointer;
+}
+
+.PopupImage {
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(81, 81, 87, 0.5);
+	z-index: 10;
+	align-items: center;
+	justify-content: center;
+	display: none;
+	/* transition: all 0.9s ease; */
+}
+.PopupImageContainer {
+	background-color: #fff;
+	opacity: 1;
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+	border-radius: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.Topbar {
+	padding: 10px 30px;
+	align-items: center;
+	height: fit-content;
+	display: flex;
+}
+.ImageFile {
+	float: left;
+	width: 98%;
+}
+.CloseBtn {
+	float: right;
+	align-items: center;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.CloseBtn:hover {
+	background-color: #ececec;
+	color: #2db6b0;
+}
+
+.image img {
+	height: 50vh;
+	width: fit-content;
+	border-radius: 0px 0px 10px 10px;
+	margin-bottom: -8px;
+	/* background-color: #F85050; */
+}
+
+.Imahe {
+	width: 40px;
+	border-radius: 5px;
+	/* height: 50px; */
+}

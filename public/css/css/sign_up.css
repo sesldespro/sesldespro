@@ -1,0 +1,405 @@
+/* fonts */
+@font-face {
+	font-family: Anton;
+	src: url(../../../fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url(../../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../../../fonts/Roboto-Regular.ttf);
+}
+
+body {
+	background-image: url(../../../images/Register.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: auto;
+	width: auto;
+}
+
+/* .nav-menu {
+    display
+} */
+
+.home-navi-table {
+	margin-top: 10px;
+}
+
+svg {
+	display: none;
+	float: right;
+	width: 2em;
+	cursor: pointer;
+}
+
+/* .signup-img-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/signup.png);
+	background-color: #2d3a5e;
+	background-repeat: no-repeat;
+	z-index: -1;
+} */
+
+.left-image {
+	float: left;
+}
+
+table {
+	width: 100%;
+	margin: 0;
+}
+
+/* navigation */
+.home-navi {
+	/* font-size: 20px; */
+	padding: 0;
+	margin: 0;
+}
+
+.right-navi {
+	text-align: right;
+	font-family: Poppins;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.menu:hover {
+	color: #1fb89c;
+}
+
+/* .logo-name {
+    padding-left: 5px;
+    text-align: left;
+    color: #2d3a5e;
+    font-size: 20px;
+    font-family: Anton;
+} */
+
+.logotext {
+	text-decoration: none;
+	padding-left: 5px;
+	text-align: left;
+	color: #2d3a5e;
+	font-size: 20px;
+	font-family: Anton;
+}
+
+.home-logo {
+	width: 20px;
+	padding-left: 10px;
+}
+
+.home-logo-new {
+	display: none;
+}
+
+.logo-img {
+	width: 20px;
+}
+.logo-name {
+	padding-left: 5px;
+	text-align: left;
+	color: #2d3a5e;
+	font-size: 20px;
+	font-family: Anton;
+}
+
+.right-navi {
+	text-align: right;
+	font-family: Poppins;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.close-btn {
+	display: none;
+}
+
+/* Bottom Texts */
+
+.end-text {
+	margin-bottom: 20px;
+	display: grid;
+	place-items: center;
+}
+.end-text label {
+	color: #fff;
+}
+
+.terms-policy {
+	text-decoration: none;
+	color: #1fb89c;
+}
+
+.sign-in-button {
+	font-family: Poppins;
+	font-weight: bold;
+	font-size: 12px;
+	color: #1fb89c;
+	background-color: #2d3a5e;
+	border-radius: 5px;
+	border-color: #1fb89c;
+}
+
+.sign-in-button:hover {
+	color: #76948e;
+	border-color: #76948e;
+}
+
+/* sign up contents */
+
+.signup-main {
+	float: right;
+	width: 55%;
+	height: 100%;
+	font-family: Poppins;
+}
+
+.signup-container {
+	align-items: center;
+	margin: auto;
+	width: 50%;
+	height: 100%;
+}
+
+/* header text and input fields */
+.header-text {
+	margin-bottom: 10px;
+	color: white;
+}
+
+.payment-details {
+	font-size: 26.5px;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.payment-details a {
+	font-size: medium;
+}
+
+.payment-details b {
+	margin: 0%;
+	padding: 0%;
+}
+
+.signin-text {
+	color: #1fb89c;
+	text-decoration: underline;
+}
+
+.input-fields {
+	/* display: flex; */
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+input,
+select {
+	font-size: 15px;
+	font-family: Poppins;
+	color: white;
+}
+
+.inputs {
+	margin-bottom: 10px;
+	color: white;
+}
+
+.text-info {
+	font-family: Poppins;
+	font-size: 15px;
+	color: rgb(255, 87, 87);
+}
+
+.border {
+	border: 1px #c4c4c4 solid;
+	border-radius: 8px;
+	background-color: transparent;
+	height: 25px;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.flex-container div {
+	padding: 0;
+}
+
+.zipcode {
+	width: 60px;
+}
+
+.cityprov {
+	width: 180px;
+}
+
+.date-time {
+	width: 100%;
+}
+
+.lnumber {
+	width: 120px;
+	margin: 0%;
+}
+
+.gender-border {
+	border: 1px #c4c4c4 solid;
+	border: 1px #c4c4c4 solid;
+	border-radius: 8px;
+	background-color: transparent;
+	height: 37px;
+	width: 104.5%;
+	padding: 5px 10px;
+}
+
+input::-webkit-datetime-edit-day-field:focus,
+input::-webkit-datetime-edit-month-field:focus,
+input::-webkit-datetime-edit-year-field:focus,
+.border:focus-visible,
+.gender-border:focus {
+	background-color: transparent;
+	color: #1fb89c;
+	outline: none;
+	border: solid 3px #1fb89c;
+}
+::-webkit-calendar-picker-indicator {
+	filter: invert(1);
+}
+
+select option {
+	color: #181d31;
+	padding: 8px 10px;
+}
+select option:hover,
+select option:focus {
+	color: #1fb89c;
+	padding: 8px 10px;
+	background-color: #181d31;
+}
+
+.check-container:hover input ~ .checkmark {
+	background-color: #1fb89c;
+}
+
+.check-container input:checked ~ .checkmark {
+	background-color: #1fb89c;
+}
+.buttons {
+	margin: auto;
+	width: fit-content;
+	/* background-color: #1fb89c; */
+}
+
+.signup-btn {
+	font-family: Poppins;
+	font-size: 15px;
+	color: white;
+	padding: 5px 50px;
+	border: none;
+	border-radius: 5px;
+	background-color: #1fb89c;
+	margin-top: 10px;
+	float: center;
+	cursor: pointer;
+}
+
+.reset-btn {
+	font-family: Poppins;
+	font-size: 15px;
+	color: white;
+	padding: 5px 50px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgb(251, 86, 86);
+	margin-top: 10px;
+	float: center;
+	cursor: pointer;
+}
+
+.signup-btn:hover {
+	color: #2d3a5e;
+}
+
+.reset-btn:hover {
+	color: #2d3a5e;
+}
+
+/* link */
+.menu {
+	text-decoration: none;
+	color: white;
+	padding-right: 10px;
+}
+
+.menu:active {
+	color: #76948e;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+	margin: auto;
+	padding: 50px;
+	width: 100%;
+	max-width: 800px;
+	background-color: white;
+}
+
+.how-to-steps {
+	color: #2d3a5e;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+	.modal-content {
+		width: 100%;
+	}
+}

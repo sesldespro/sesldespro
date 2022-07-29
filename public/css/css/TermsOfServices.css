@@ -1,0 +1,131 @@
+/* fonts */
+@font-face {
+	font-family: Anton;
+	src: url(../../../fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url(../../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../../../fonts/Roboto-Regular.ttf);
+}
+
+body {
+	background-image: url(../../../images/BG_Home.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: auto;
+	width: auto;
+	font-family: poppins;
+	color: #2d3a5e;
+}
+table {
+	width: 100%;
+	margin: 0;
+}
+
+/* navigation */
+.home-navi {
+	/* font-size: 20px; */
+	padding: 0;
+	margin: 0;
+	/* background-color: yellow; */
+}
+
+svg {
+	display: none;
+	float: right;
+	width: 2em;
+	cursor: pointer;
+	color: #2d3a5e;
+}
+
+.home-logo {
+	width: 20px;
+	padding-left: 10px;
+}
+
+.logo-img {
+	width: 20px;
+}
+
+.logo-name {
+	padding-left: 5px;
+	text-align: left;
+	color: #2d3a5e;
+	font-size: 20px;
+	font-family: Anton;
+}
+
+.right-navi {
+	text-align: right;
+	font-family: Poppins;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.menu:hover {
+	color: #1fb89c;
+}
+
+.sign-in-button {
+	font-family: Poppins;
+	font-weight: bold;
+	font-size: 12px;
+	color: #5c7a7b;
+	background-color: white;
+	border-radius: 5px;
+	border-color: #5c7a7b;
+	cursor: pointer;
+}
+.sign-in-button:hover {
+	color: #76948e;
+	border-color: #76948e;
+}
+
+/* homepage banner */
+.TOSContainer {
+	margin: auto;
+	width: 80%;
+	/* background-color: red; */
+	padding: 10px;
+	margin-top: 160px;
+}
+
+.TOSText {
+	margin: auto;
+	padding: 50px 100px;
+	width: 50%;
+	height: fit-content;
+	background-color: #ffffff;
+	font-size: 20px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.TOSText .home-logo1 {
+	width: 80px;
+}
+.TOSText h1 {
+	font-family: anton;
+}
+.TOSText p {
+	text-align: justify;
+}
+
+/* link */
+a {
+	text-decoration: none;
+	color: #131c35;
+	padding-right: 10px;
+}
+
+a:active {
+	color: #76948e;
+}

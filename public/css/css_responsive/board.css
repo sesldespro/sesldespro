@@ -1,0 +1,240 @@
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: #f0f0f0;
+		background-image: none;
+	}
+	body::-webkit-scrollbar{
+		display: none;
+	}
+
+	.sidebar-wrapper {
+		position: fixed;
+		right: 0;
+		top: 0;
+		background: white;
+		height: 100vh;
+		width: 50%;
+		z-index: 5;
+		text-transform: uppercase;
+		text-align: left;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.open-nav {
+		transform: translateX(0%);
+	}
+
+	.header {
+		margin-left: 40px;
+	}
+
+	.burger-menu {
+		width: 45px;
+		display: grid;
+		margin: 20px 10px 0px 0px;
+	}
+
+	.close-btn {
+		display: grid;
+		margin: 1em 0em 0em 1em;
+		width: 30px;
+		cursor: pointer;
+	}
+
+	.logo-mobile {
+		display: grid;
+		width: 30px;
+	}
+
+	.head-logo {
+		display: none;
+	}
+
+	.logotext {
+		color: #2d3a5e;
+	}
+
+	.sidebar-buttons li {
+		font-size: 20px;
+		color: #2d3a5e;
+		padding:20px;
+	}
+
+	.sidebar-buttons ul {
+		list-style-type: none;
+	}
+
+
+
+	/* Head Navigation */
+
+	.navigation {
+		margin: auto;
+		padding: 0px;
+		width: 90%;
+		color: aquamarine;
+	}
+
+	.navigation h1{
+		font-size: 1.5em;
+	}
+
+	.navigation .rent-btn{
+		width: 60px;
+		/* padding: 8px 27px; */
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		font-size: 10px;
+		justify-content: space-between;
+		margin: 20px 0px 20px 10px;
+
+	}
+
+	.navigation .rent-btn svg{
+		padding: 2px 5px;
+		margin: auto;
+		text-align: center;
+	}
+
+	/* Subscription Cards */
+
+	.dashboard-container {
+		width: 100%;
+	}
+
+	.subscription-cards {
+		padding:3px 0px 0px 0px;
+		margin: auto;
+		width: 90%;
+		gap: 10px;
+	}
+
+	.choose-title{
+		margin: 30px 0px 20px 20px;
+	}
+
+	/* .basic-sub,
+	.startup-sub,
+	.pro-sub {
+		width: 22%;
+		height: 100%;
+		padding: 0px 0px;
+		border-radius: 20px;
+	} */
+
+	.sub-card {
+		width: 22%;
+		border-radius: 20px;
+		display: block;
+		border: none;
+	}
+
+	.sub-card p {
+		margin-bottom: 2px;
+	}
+
+	h3 {
+		font-size: 15px;
+		color: #2d3a5e;
+	}
+
+	span {
+		font-size: 20px;
+	}
+
+	.pop-sub h3 {
+		font-size: 15px;
+		color: white;
+	}
+
+	.sub-card span {
+		font-size: 20px;
+	}
+
+	.sub-card .pop-text {
+		display: none;
+	}
+
+	p {
+		font-size: 8px;
+		margin-bottom: 10px;
+	}
+
+	li {
+		font-size: 10px;
+	}
+
+	.sub-card ul{
+		display: flex;
+		flex-direction: column;
+		padding: 0px;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.sub-card li {
+		font-size: 10px;
+	}
+
+	.button {
+		margin-top: 25px;
+	}
+
+	.sub-btn {
+		font-size: 9px;
+		border-radius: 20px;
+		/* padding: 5px 5px; */
+		text-align: center;
+		margin-top: 30px;
+		position: relative;
+		/* bottom: 20px; */
+	}
+	
+
+	/* Rent */
+
+	.rent-activities {
+		padding: 0;
+		margin: auto;
+	}
+
+	.rent {
+		margin: auto;
+		padding: 0;
+		width: 90%;
+		/* background-color: #9cacd6; */
+	}
+
+	/* Activities */
+	.activities {
+		display: none;
+	}
+
+	/* Badge */
+	.count {
+		top: -15px;
+		color: white;
+    	left: -175px;
+	}
+}
+
+@media only screen and (max-width: 490px) {
+	.count {
+		/* top: -40px; */
+		left:-125px;
+	}
+	.sidebar-buttons li {
+		font-size: 13px;
+		padding: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 390px) {
+	.sidebar-wrapper{
+		width: 55%;
+	}
+}
+

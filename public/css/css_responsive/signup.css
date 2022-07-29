@@ -1,0 +1,147 @@
+@media only screen and (min-width: 1920px) {
+	.gender-border {
+		width: 104.5%;
+	}
+
+	h1 {
+		font-family: Anton;
+		font-size: 45px;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	.gender-border {
+		width: 110%;
+	}
+
+	h1 {
+		font-size: 23px;
+	}
+	p {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: #2d3a5e;
+		background-image: none;
+	}
+	.right-navi {
+		position: fixed;
+		right: 0;
+		top: 0;
+		background: white;
+		height: 100vh;
+		width: 50%;
+		z-index: 5;
+		text-transform: uppercase;
+		text-align: left;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.open-nav {
+		transform: translateX(0%);
+	}
+
+	.menu-list {
+		margin-top: 6em;
+	}
+
+	.close-btn {
+		display: grid;
+		float: right;
+		margin: 1em;
+		width: 40px;
+	}
+
+	.menu {
+		padding: 10px;
+		display: block;
+		padding-left: 2em;
+		color: black;
+		font-size: 25px;
+		width: 100%;
+	}
+
+	.menu:hover {
+		background-color: #e7e7e7;
+	}
+
+	.signin-text {
+		font-size: 15px;
+	}
+
+	.sign-in-button {
+		display: none;
+	}
+
+	.burger-menu {
+		display: grid;
+		margin-right: 10px;
+	}
+
+	.logotext {
+		color: white;
+	}
+
+	.home-logo {
+		display: none;
+	}
+
+	.home-logo-new {
+		width: 20px;
+		padding-left: 10px;
+		display: grid;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 12px;
+		margin-bottom: 3em;
+	}
+
+	.end-text {
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.border {
+		width: 100%;
+		height: 20px;
+		font-size: 12px;
+	}
+
+	.gender-border {
+		width: 109%;
+	}
+
+	.signup-main {
+		float: center;
+		width: 100%;
+		height: 100%;
+		font-family: Poppins;
+	}
+
+	.signup-btn {
+		font-size: 15px;
+		padding: 5px 40px;
+		float: center;
+	}
+}
+
+/* @keyframes load {
+	from {
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	to {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+} */

@@ -1,0 +1,83 @@
+@media only screen and (max-width: 600px) {
+	body {
+		background-image: url(../../../images/homebg2.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: bottom;
+		background-attachment: fixed;
+		height: auto;
+		width: auto;
+	}
+
+	.burger-menu {
+		display: grid;
+		margin-right: 10px;
+	}
+
+	.right-navi {
+		position: fixed;
+		right: 0;
+		top: 0;
+		background: white;
+		height: 100vh;
+		width: 50%;
+		z-index: 5;
+		text-transform: uppercase;
+		text-align: left;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.open-nav {
+		transform: translateX(0%);
+	}
+
+	.menu-list {
+		margin-top: 6em;
+	}
+
+	.close-btn {
+		display: grid;
+		float: right;
+		margin: 1em;
+		width: 40px;
+	}
+
+	.menu {
+		padding: 10px;
+		display: block;
+		padding-left: 2em;
+		color: black;
+		font-size: 25px;
+		width: 100%;
+	}
+
+	.menu:hover {
+		background-color: #e7e7e7;
+	}
+
+	.sign-in-button {
+		background-color: #1fb89c;
+		border: none;
+		color: white;
+		font-size: 20px;
+		width: 100%;
+		padding: 8px 60px;
+	}
+
+	.sign-in-button:hover {
+		color: none;
+	}
+
+	/* Center Contents */
+
+	.TOSContainer {
+		margin: auto;
+		padding: 30px;
+		margin-top: 70px;
+	}
+	.TOSText {
+		width: 80%;
+		padding: 30px 50px;
+	}
+}
